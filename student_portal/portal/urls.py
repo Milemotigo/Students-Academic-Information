@@ -9,4 +9,5 @@ urlpatterns = [
     path('view_students_json/', views.all_students_json),
     # path('portal/', views.portal)
     path('base-html-view/', views.base_view),
+    # path('home/', views.base_view, name='home'),
 ]

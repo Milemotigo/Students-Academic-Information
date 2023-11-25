@@ -21,3 +21,6 @@ def all_students_json(request):
 
 def base_view(request):
     return render(request, 'html/base.html')
+
+# def home(request):
+#     return render(request, 'html/home.html')
