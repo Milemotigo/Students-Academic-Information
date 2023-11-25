@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from datetime import datetime
 
 class School_Admin(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -23,6 +24,7 @@ class Student(models.Model):
     matric_number = models.CharField(max_length=20, unique=True)
     date_of_birth = models.DateField()
     state_of_origin = models.CharField(max_length=40)
+    create_at = models.DateTimeField(default=datetime.now())
     # other fields...
 
     # other fields...
